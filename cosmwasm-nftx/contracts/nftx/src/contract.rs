@@ -194,6 +194,7 @@ pub mod execute {
                     for j in 0..vector_vault[i].vault_user_nft_data.len()-1 {
                         if vector_vault[i].vault_user_nft_data[j].nft_id == user_nft_data.nft_id {
                             vector_vault[i].vault_user_nft_data.remove(j);
+                            break;
                         }
                     }
                 }
